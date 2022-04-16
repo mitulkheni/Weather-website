@@ -17,8 +17,12 @@ const forecast = (longitude, latitude, callback) => {
         undefined,
         "The current temperature is " +
           body.current.temperature +
-          ". And humidity is: " +
-          body.current.humidity
+          "°C And humidity is: " +
+          body.current.humidity +
+          ". The Current feel is " +
+          body.current.feelslike +
+          "°C. Weather discription: " +
+          body.current.weather_descriptions[0]
       );
     }
   });
